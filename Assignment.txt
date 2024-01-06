@@ -1,0 +1,31 @@
+Basics Of Git
+Assignment 1
+
+1.Concepts of Git
+Git is a distributed version control system designed to track changes in source code during software development. It allows multiple developers to work on a single project. A "repository", also known as "repo", is a central storage where all the project files and their version history are stored.
+"Clone" is used to make a copy of this repo on to the machines of the developers. "Commit" is used to save the changes to the repo, thereby creating a snapshot of the projectat the moment. Each of these commit have a unique hash value. Branching allows developers to create separate lines of development for a specific feature or bug fixes. 
+The "main" branch is commonly used. "Merge" is used to combine these changes from one branch to another, so that all modifications are integrated. Conflicts can arise while merging these changes. "Pull" is used to fetch the changes from a remote repo and merge them to the local branch while "push" is to upload local changes to the remote repo.
+".gitignore" file is used to exclude certain files or directories from version control that are not relevant.
+
+2.Basic Commands of Git
+(a) git init: To create a new Git repository and create a ".git" folder in the directory.
+(b) git clone [repository URL]: To create a clone of the repository to the local machine.
+(c) git add [file/directory]: To add changes in a file or directory to the staging area, also allowing them to make new commts.
+(d) git commit -m "[commit message]": To commit changes in the staging area to the repository with a message.
+(e) git merge [branch name]: To combine changes from specified branch into the current branch.
+(f) git pull [remote][branch]: To upload changes from remote repository to the current branch.
+(g) git push [remote][branch]: To upload local changes to the remote repository.
+(h) git reset [file]: To undo the changes in a file and removing them from the staging area.
+(i) git status: To show the status of changes as untracked, modified or staged.
+
+3.Add concepts on GitHub, GitLab And BitBucket
+GitHub is a widely used web-based platfor to host and collaborate on Git repositories. It acts a acentral hub for developers to share and contribute to projects. It has featurs like issue tracking, project boards, pull requests which enables user-friendly interface for forstering seamless collaborations. 
+GitLab is another web-based Git repository manager,which incoporates robust features like Continuous Integration/Continuous Deployment(CI/CD) pipelines. It is flexible and offers both free and self-hosted instance to accommodate various deploment preferences. It provides teams with a unified platform to streamline development and deployment processes.
+BitBucket is a Git repository management solution which has a seamless integration with other Atlassian tools. It is tailored for teams immersed in the Atlassian ecosystem, offering features like pull requests, automated workflows through pipelines, and tight integration with Jira for project management. One of its standout features is the provision of free private repositories, making it an attractive choice for teams seeking a secure and integrated solution for version control and project management within the Atlassian suite.
+
+4.Industrial practices of using Git
+In the industry of software development, Git has evolved into an essential and ingrained practice, fostering efficient collaboration, version control, and codebase management. Common strategies involve structured branching methodologies like Gitflow or GitHub flow, ensuring organized development, feature isolation, and streamlined release management. Code reviews, facilitated through pull requests, are widely embraced for code quality assurance, knowledge sharing, and preemptive issue detection before merging into the main codebase. Integrating Continuous Integration (CI) and Continuous Deployment (CD) into Git workflows automates testing and deployment, upholding a high standard of code reliability and expeditious delivery. Git hooks automate tasks pre- and post-commit, guaranteeing code consistency and quality, while version tagging aids in clearly marking significant milestones in the project's timeline. Comprehensive documentation within the repository provides insights into project structure, coding standards, and setup instructions, adhering to best practices that emphasize collaboration, efficiency, and the consistent delivery of top-tier software products.
+
+5.Cloning a repo to local
+. Open your terminal or command prompt and navigate to the directory where you want the local copy of the repository to be stored using cd command
+. Clone the repositary using clone command - git clone <repository-url>. This command copies the repository and also sets up the connection to the remote repository
